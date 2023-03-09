@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px auto;
+            padding: 0px;
+        }
+
+        .wrapper{
+            width: 40%;
+            min-height: 700px;
+            background-color: beige;
+        }
+
+        .bai10_content{
+            width: 100%;
+            height: 700px;
+            box-shadow: 0 0 20px #ccc;
+            position: relative;
+        }
+
+        .bai10_content .box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #ffcc00;
+            left: 250px;
+            top: 250px;
+        }
+
+        
+        /* 4 kieu chuyen dong */
+        @-webkit-keyframes scroll{
+            to{
+                left: 100%;
+                -webkit-transform: rotate(180deg);
+            }
+        }
+
+        @-moz-keyframes scroll{
+            to{
+                left: 100%;
+                -moz-transform: rotate(180deg);
+            }
+        }
+
+        @-o-keyframes scroll{
+            to{
+                left: 100%;
+                -o-transform: rotate(180deg);
+            }
+        }
+
+        @keyframes scroll{
+            to{
+                left: 100%;
+                transform: rotate(180deg);
+            }
+        }
+
+        .bai10_content .box{
+            -webkit-animation-name: scroll;
+            -moz-animation-name: scroll;
+            -o-animation-name: scroll;
+            animation-name: scroll;
+
+            -webkit-animation-duration: 5s;
+            -moz-animation-duration: 5s;
+            -o-animation-duration: 5s;
+            animation-duration: 5s;
+
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
+            -webkit-animation-timing-function: ease-in-out;
+            -moz-animation-timing-function: ease-in-out;
+            -o-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+
+            -webkit-animation-direction: alternate;
+            -moz-animation-direction: alternate;
+            -o-animation-direction: alternate;
+            animation-direction: alternate;
+        }
+
+        .bai11_content{
+            box-shadow: 0 0 20px #ccc;
+        }
+
+        .bai11_content h1{
+            text-shadow: 0 0 3px #000000;
+        }
+
+        .bai11 .footer{
+            width: 40%;
+            color: #fff;
+            background-color: green;
+            position: fixed;
+            bottom: 0;
+            display: block;
+        }
+
+        .bai12_content{
+            box-shadow: 0 0 20px #ccc;
+        }
+
+        .bai12_content h1{
+            text-shadow: 0 0 3px #000000;
+            padding: 30px;
+            position: relative;
+        }
+
+        .bai12_content .ribbon{
+            color: #fff;
+            background-color: rgb(143, 23, 23);
+            display: inline-block;
+            margin-left: -15px;
+            margin-top: -70px;
+            padding: 5px 10px;
+            transform: rotate(-45deg);
+            box-shadow: 0 0 10px #888888;
+            position: absolute;
+        }
+
+        .bai17_content{
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 20px #ccc;
+            width: 100%;
+            height: 60px;
+
+        }
+
+        .bai17_content .menu{
+            line-height: 10px;
+            background-color: rgb(197, 85, 85);
+        }
+
+        .bai17_content .menu li{
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .bai17_content .menu li a{
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+            list-style: none;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bai9">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 9</h1>
+            <div class="bai9_content">
+            </div>
+        </div>
+    
+        <div class="bai10">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 10</h1>
+            <div class="bai10_content">
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="bai11">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 11</h1>
+            <div class="bai11_content">
+                <p>
+                    Cascading Style Sheets (CSS) is a style sheet language used for
+                    describing the look and formatting of a document written in a
+                    markup language. Althoygh most often used to change the style of
+                    web pages amd user interfaces written in HTML and XHTML, the
+                    language can be applied to any kind of XML document, including
+                    plain XML, SVG and XUL. Along with HTML and JavaScript, CSS 
+                    is a cornerstone technology used by most websites to create visually
+                    engaging webpages, user interfaces for web application, and user
+                    inter faces for many mobile application.[1]
+    
+                    CSS is designed primarily to enable the separation of document
+                    content from document presentation, including elements such as the
+                    layout, color, and fonts.[2] This swparation can improve content 
+                    accessibility, provide more flexibility and control int the specification
+                    of presentation characteristics, enable multiple HTML pages to share
+                    and every one a lot of.
+                </p>
+            </div>
+            <footer class="footer">
+                I will be stuck here
+            </footer>
+        </div>
+    
+        <div class="bai12">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 12</h1>
+            <div class="bai12_content">
+                <h1>Casading Style Sheets Book</h1>
+                <p class="ribbon"> 
+                    Best seller 2015
+                </p>
+                <p>
+                    Cascading Style Sheets (CSS) is a style sheet language used for
+                    describing the look and formatting of a document written in a
+                    markup language. Althoygh most often used to change the style of
+                    web pages amd user interfaces written in HTML and XHTML, the
+                    language can be applied to any kind of XML document, including
+                    plain XML, SVG and XUL. Along with HTML and JavaScript, CSS 
+                    is a cornerstone technology used by most websites to create visually
+                    engaging webpages, user interfaces for web application, and user
+                    inter faces for many mobile application.
+                </p>
+            </div>
+        </div>
+    
+        <div class="bai13">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 13</h1>
+            <div class="bai13_content">
+    
+            </div>
+        </div>
+    
+        <div class="bai14">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 14</h1>
+            <div class="bai14_content">
+    
+            </div>
+        </div>
+    
+        <div class="bai15">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 15</h1>
+            <div class="bai15_content">
+    
+            </div>
+        </div>
+    
+        <div class="bai16">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 16</h1>
+            <div class="bai16_content">
+    
+            </div>
+        </div>
+    
+        <div class="bai17">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 17</h1>
+            <div class="bai17_content">
+                <ul class="menu">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">ARTICLES</a></li>
+                    <li><a href="">FORUM</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="bai18">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 18</h1>
+            <div class="bai18_content">
+    
+            </div>
+        </div>
+    
+        <div class="bai19">
+            <h1 class="top_content" style="margin-top: 100px;">Bài 19</h1>
+            <div class="bai19_content">
+    
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
